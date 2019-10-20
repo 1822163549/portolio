@@ -1,0 +1,12 @@
+<title>博客</title>
+<h1>博客</h1>
+{% for boke in bokes.all %}
+{{ boke.title }}
+<br>
+{{ boke.date }}
+<br>
+<img src="{{ boke.image.url }}" height="20%">
+<br>
+{{ boke.text }}
+<br>
+{% endfor %}

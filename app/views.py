@@ -3,7 +3,7 @@ from app.models import MODELNAME
 # Create your views here.
 
 
-def home(requests):
+def home(request):
 	apps = MODELNAME.objects
-	return render(requests, 'home.html', {'apps': apps})
+	return render(request, 'home.html', {'apps': apps})
 	

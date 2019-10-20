@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #这是我注册的app
     'app.apps.AppConfig',
+    'boke',
 ]
 
 MIDDLEWARE = [
