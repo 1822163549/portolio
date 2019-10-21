@@ -12,4 +12,4 @@ class Boke(models.Model):
 		return self.title
 
 	def short_text(self):
-		return self.text[:30] + "......"
+		return self.text[:90] + "......"

@@ -19,6 +19,8 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.boke),
+    path('', views.boke_page),
+    path('<boke_id>/', views.boke_text),
+
 ]
 

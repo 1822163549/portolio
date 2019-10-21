@@ -23,7 +23,7 @@ from django.conf import settings
 urlpatterns = [
     path('boke/', include('boke.urls')),
     path('admin/', admin.site.urls),
-    path('', views.home)
+    path('', views.home),
     #path('boke/', boke.views.boke)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

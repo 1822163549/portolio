@@ -119,11 +119,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-
+#设置静态文件路径
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'portolio/static/'),
+]
+#静态文件网址
 STATIC_URL = '/static/'
-
+#静态文件根目录
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 #图片网站
 MEDIA_URL = '/media/'
-
 #图片路径
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
